@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Report";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title mb-4 d-inline fw-bold">Sales Report</h3>
+                    <select id="ChartType" class="form-control mt-2 mb-3" style="width:150px;">
+                        <option selected>--Select--</option>
+                        <option>bar</option>
+                        <option>line</option>
+                        <option>pie</option>
+                        <option>doughnut</option>
+                    </select>
+                    <input id="ID" class="btn btn-primary" value="Show Graph" type="button" />
+                    <div style="display: flex; justify-content:center;align-items:center">
+                    <canvas id="myChart" style="max-width:500px; max-height:500px;"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script type="text/javascript">
+    $(function() {
+        $("#ID").click(function() {
+            var chartType=$("#ChartType").val();
+            $.ajax({
+                type: "POST",
+                url: "/Home/GetSalesData", // Modified URL to match the correct controller and action method
+                contentType: "application/json; charset=utf-8", // Corrected 'contextType' to 'contentType'
+                dataType: "json",
+                success: OnSuccessResult,
+                error: OnError // Corrected 'eror' to 'error'
+            });
+
+            function OnSuccessResult(data) {
+                var _data = data;
+                var _chartLabels = _data[0];
+                var _chartData = _data[1];
+
+                var barColor = ["red", "green", "blue", "orange", "brown", "purple"];
+
+                new Chart("myChart", {
+                    type: chartType,
+                    data: {
+                        labels: _chartLabels,
+                        datasets: [{
+                            backgroundColor: barColor,
+                            data: _chartData // Corrected '_charData' to '_chartData'
+                        }]
+                    }
+                });
+            }
+
+            function OnError(err) {
+                // Handle error
+            }
+        });
+    });
+</script>

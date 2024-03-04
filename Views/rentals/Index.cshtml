@@ -1,0 +1,114 @@
+﻿@model IEnumerable<BicycleStore.Models.rental>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title mb-4 d-inline fw-bold">Rental List</h3>
+                    <p>
+                        <a class="btn btn-primary mt-2" asp-action="Create">Create New</a>
+                    </p>
+                    <table class="table table-striped ms-auto">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Name)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.MatricNo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PhoneNo)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RentalStartDay)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RentalEndDay)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.RentalFee)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.BicycleId)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CreatedByAdmin)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.CreatedByEmployee)
+                                </th>
+                                <th>
+                                    Update
+                                </th>
+                                <th>
+                                    Details
+                                </th>
+                                <th>
+                                    Delete
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @item.id
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.MatricNo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.PhoneNo)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RentalStartDay)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RentalEndDay)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.RentalFee)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.BicycleId)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CreatedByAdmin)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.CreatedByEmployee)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.id" class="btn btn-warning text-white text-center" data-inline="true">Edit</a>
+                                    </td>
+                                    <td>
+                                        <a asp-action="Details" asp-route-id="@item.id" class="btn btn-primary text-white text-center" data-inline="true">Details</a>
+                                    </td>
+                                    <td>
+                                        <a asp-action="Delete" asp-route-id="@item.id" class="btn btn-danger text-white text-center" data-inline="true">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

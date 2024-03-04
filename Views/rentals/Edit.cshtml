@@ -1,0 +1,90 @@
+﻿@model BicycleStore.Models.rental
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string userRole = ViewContext.HttpContext.Session.GetString("UserRole");
+    int? userId = ViewContext.HttpContext.Session.GetInt32("UserId");
+}
+<div class="container-fluid">
+
+    <div class="row mt-3">
+        <div class="col mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title mb-4 d-inline fw-bold">Edit Rental Info</h3>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-4">
+                            <form asp-action="Edit">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                <input type="hidden" asp-for="id" />
+                                <div class="form-group">
+                                    <label asp-for="Name" class="control-label"></label>
+                                    <input asp-for="Name" class="form-control" />
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="MatricNo" class="control-label"></label>
+                                    <input asp-for="MatricNo" class="form-control" />
+                                    <span asp-validation-for="MatricNo" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="PhoneNo" class="control-label"></label>
+                                    <input asp-for="PhoneNo" class="form-control" />
+                                    <span asp-validation-for="PhoneNo" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="RentalStartDay" class="control-label"></label>
+                                    <input asp-for="RentalStartDay" class="form-control" />
+                                    <span asp-validation-for="RentalStartDay" class="text-danger"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="RentalEndDay" class="control-label"></label>
+                                    <input asp-for="RentalEndDay" class="form-control" />
+                                    <span asp-validation-for="RentalEndDay" class="text-danger"></span>
+                                </div>
+                                @*<div class="form-group">
+                                    <label asp-for="RentalFee" class="control-label"></label>
+                                    <input asp-for="RentalFee" class="form-control" />
+                                    <span asp-validation-for="RentalFee" class="text-danger"></span>
+                                </div>*@
+                                <div class="form-group">
+                                    <label asp-for="BicycleId" class="control-label"></label>
+                                    <select asp-for="BicycleId" class="form-control" asp-items="@ViewBag.BicycleId"></select>
+                                </div>
+                                <div class="form-group">
+                                    @if (userRole == "Admin")
+                                    {
+                                        <label asp-for="CreatedByAdmin" class="control-label"></label>
+                                        <input asp-for="CreatedByAdmin" class="form-control" value="@userId" readonly />
+                                        <span asp-validation-for="CreatedByAdmin" class="text-danger"></span>
+                                    }
+                                    else if (userRole == "Employee")
+                                    {
+                                        <label asp-for="CreatedByEmployee" class="control-label"></label>
+                                        <input asp-for="CreatedByEmployee" class="form-control" value="@userId" readonly />
+                                        <span asp-validation-for="CreatedByEmployee" class="text-danger"></span>
+                                    }
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="submit" value="Save" class="btn btn-primary" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="mt-2 mb-5">
+                        <a asp-action="Index">Back to List</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

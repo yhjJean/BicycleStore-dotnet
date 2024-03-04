@@ -1,0 +1,72 @@
+﻿@model IEnumerable<BicycleStore.Models.bicycle>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title mb-4 d-inline fw-bold">Bicycle List</h3>
+                    <p>
+                        <a class="btn btn-primary mt-2" asp-action="Create">Create New</a>
+                    </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Type)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Status)
+                                </th>
+                                <th>
+                                    Update
+                                </th>
+                                <th>
+                                    Details
+                                </th>
+                                <th>
+                                    Delete
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.id</td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Type)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Status)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.id"
+                                           class="btn btn-warning text-white text-center" data-inline="true">Edit</a>
+                                    </td>
+                                    <td>
+                                        <a asp-action="Details" asp-route-id="@item.id"
+                                           class="btn btn-primary text-white text-center"
+                                           data-inline="true">Details</a>
+                                    </td>
+                                    <td>
+                                        <a asp-action="Delete" asp-route-id="@item.id"
+                                           class="btn btn-danger text-white text-center" data-inline="true">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

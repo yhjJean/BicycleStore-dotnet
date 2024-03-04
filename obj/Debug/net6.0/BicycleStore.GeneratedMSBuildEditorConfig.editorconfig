@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BicycleStore
+build_property.RootNamespace = BicycleStore
+build_property.ProjectDir = C:\Users\yongh\source\repos\BicycleStore\BicycleStore\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\yongh\source\repos\BicycleStore\BicycleStore
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/admins/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5zXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/admins/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5zXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/admins/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5zXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/admins/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5zXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/admins/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYWRtaW5zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/bicycles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmljeWNsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/bicycles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmljeWNsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/bicycles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmljeWNsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/bicycles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmljeWNsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/bicycles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcYmljeWNsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/employees/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZW1wbG95ZWVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/employees/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZW1wbG95ZWVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/employees/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZW1wbG95ZWVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/employees/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZW1wbG95ZWVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/employees/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZW1wbG95ZWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/Home/SalesReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxlc1JlcG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/rentals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/rentals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/rentals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/rentals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/rentals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NccmVudGFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/sales.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3Ncc2FsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yongh/source/repos/BicycleStore/BicycleStore/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ik1ju4x8ol
